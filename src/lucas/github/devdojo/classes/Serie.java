@@ -5,22 +5,37 @@ public class Serie {
     private String tipo;
     private int episodios;
     private String streaming;
+    private String estudio;
 
     //Construtor que recebe os valores na criação do objeto
     public Serie(String nome, String tipo, int episodios, String streaming){
-        System.out.println("Testando construtor");
+        this();
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
         this.streaming = streaming;
     }
+//Teste de sobrecarga de construtor para adicionar o atributo "Streaming"
+    public Serie(String nome, String tipo, int episodios, String streaming, String estudio){
+        this(nome, tipo, episodios, streaming);
+        this.nome = nome;
+        this.tipo = tipo;
+        this.episodios = episodios;
+        this.streaming = streaming;
+        this.estudio = estudio;
+    }
+
+    public Serie(){
+
+    }
 
     //metodo para imprimir os valores da Serie
     public void imprime(){
-        System.out.println(this.nome);
-        System.out.println(this.tipo);
-        System.out.println(this.episodios);
-        System.out.println(this.streaming);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Tipo: " + this.tipo);
+        System.out.println("Episodios: " + this.episodios);
+        System.out.println("Streaming: " + this.streaming);
+        System.out.println("Estudio: " + this.estudio);
     }
 
     //classe para exemplo de sobrecarga de metodos

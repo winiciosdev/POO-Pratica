@@ -6,6 +6,7 @@ public class Serie {
     private int episodios;
     private String streaming;
 
+    //Construtor que recebe os valores na criação do objeto
     public Serie(String nome, String tipo, int episodios, String streaming){
         System.out.println("Testando construtor");
         this.nome = nome;
@@ -30,7 +31,7 @@ public class Serie {
     }
 
     //utilizando o metodo "inicializa" para sobrecarga trazendo os valores do primeiro metodo e adicionando o "Streaming"
-    public void inicializa(String nome, String tipo, int episodios, String streaming){
+    /* public void inicializa(String nome, String tipo, int episodios, String streaming){
         this.inicializa(nome, tipo, episodios);
         this.streaming = streaming;
     }
@@ -58,5 +59,5 @@ public class Serie {
 
     public int getEpisodios(){
         return episodios;
-    }
+    } */
 }

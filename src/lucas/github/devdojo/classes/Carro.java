@@ -28,7 +28,7 @@ public class Carro {
 
     public void exibeModelo(){
         /* Vai exibir os dados que o usuário inserir nas variaveis "Nome" e "Marca" */
-        System.out.println("O nome do carro é: " + this.nome);
+        System.out.println("O nome do carro é: " + this.getNome());
         System.out.println("A marca do carro é: " + this.marca);
     }
 

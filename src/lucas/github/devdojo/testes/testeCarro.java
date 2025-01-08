@@ -22,7 +22,7 @@ public class testeCarro {
 
 
         //
-        int opcao = 0;
+        /*int opcao = 0;
         while (opcao !=3){
             System.out.println("""
                 Selecione uma das opções:
@@ -39,6 +39,6 @@ public class testeCarro {
         }
 
 
+    }*/
     }
-
 }
